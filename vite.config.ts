@@ -1,6 +1,8 @@
+import pages from '@hono/vite-cloudflare-pages'
+import adapter from '@hono/vite-dev-server/cloudflare'
+import honox from 'honox/vite'
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
-  plugins: [react()]
+  plugins: [honox({})]
 })
